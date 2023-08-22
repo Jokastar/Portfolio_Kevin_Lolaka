@@ -1,0 +1,84 @@
+body{
+    background-color: var(--black);
+}
+body, header{
+    color: white;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-txt h1 {
+    font-size: 1.5rem;
+}
+
+.white-space-2{
+    height: 5vh;
+}
+
+.section-title{
+    border-top: 1px solid var(--grey);
+}
+.section-title h2{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+
+.skill-row{
+    border-bottom: 1px solid var(--grey);
+}
+
+.skill-row h3, .education-row h3, .education-row div p{
+    font-size: var(--h3);
+    font-family: "Leitura";
+}
+
+.skill-row h3, .education-row h3{
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+.skill-row p, .tech-stack, .education-row p{
+    color: var(--grey);
+}
+.skill-description{
+    margin:0px;
+}
+
+
+.tech-stack{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.education-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#date{
+    font-size: 0.75rem;
+    font-family:"FavoritBookC"; 
+}
+
+
+@media screen and (max-width:768px){
+    .grid{
+        grid-template-columns: 1fr;
+    } 
+    .white-space-1{
+        height: 15vh;
+    }
+
+    .white-space-3{
+        height: 3vh;
+    }
+
+}
+
