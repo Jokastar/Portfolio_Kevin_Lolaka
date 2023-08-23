@@ -1,6 +1,5 @@
 ---
 const { p_number, title, year, role, presentation } = Astro.props;
-import plus_solid from "/plus-solid.svg";
 ---
 
 <div class="portfolio-grid-item" id={p_number}>
@@ -15,6 +14,5 @@ import plus_solid from "/plus-solid.svg";
     <p>{presentation}</p>
   </div>
   <div class="g-footer">
-    <div id="more"><img src={plus_solid} alt="plus-logo" /></div>
   </div>
 </div>
