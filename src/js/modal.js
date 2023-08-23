@@ -20,7 +20,7 @@ for(let item of grid_items){
     item.addEventListener("click", (e)=>{
         const p_number = e.currentTarget.id;
         const project = projects.find(project => project.p_number == p_number); 
-        const modalInnerHtml = `<div class="cross"> <img src="../../public/xmark-solid.svg"/></div>
+        const modalInnerHtml = `<div class="cross"> <img src="/logo/xmark-solid.svg"/></div>
         <div class="modal-header" id="modal-header-one">
             <h1 id="modal-title">${project.title}</h1>
             <span id="modal-role-desc">${project.role}</span>

@@ -76,4 +76,4 @@ const booki = new Project(
   ); 
 
    export const projects = [booki, portfolio, kasa, mon_vieux_grimoire]; 
-   export const techLogo = [{tech:"html", img:"../../public/html5.svg"}, {tech:"css", img:"../../public/css3.svg"}, {tech:"javascript",img:"../../public/js.svg" }, {tech:"react", img:"../../public/react.svg"}, {tech:"node", img:"../../public/node.svg"}, {tech:"express", img:"../../public/express.svg"}, {tech:"mongo", img:"../../public/mongodb.svg"}]
+   export const techLogo = [{tech:"html", img:"/public/html5.svg"}, {tech:"css", img:"/public/css3.svg"}, {tech:"javascript",img:"/public/js.svg" }, {tech:"react", img:"/public/react.svg"}, {tech:"node", img:"/public/node.svg"}, {tech:"express", img:"/public/express.svg"}, {tech:"mongo", img:"/public/mongodb.svg"}]
