@@ -195,15 +195,24 @@
     border-bottom: 1px solid var(--grey);
 }
 
-.screenshot-grid{
+.img-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
+    padding: 4%;
+    background-color: rgb(221 220 220);
+    border-radius: 15px;
+    border-radius: 10px;
 }
 
-.screenshot-grid-item{
-    background-color: var(--black-grey);
-    min-height: 200px;
+.img-grid-container{
+    width: 100%;
+}
+
+.img-grid-container img{
+    width: 100%;
+    border-radius: 8px;
+
 }
 
 .links{

@@ -1,4 +1,4 @@
-function Project(p_number, title, role ,year, techStack, shortPresentation, presentation, mission,  realisation, github){
+function Project(p_number, title, role ,year, techStack, shortPresentation, presentation, mission,  realisation, img, github){
     this.p_number = p_number, 
     this.title = title; 
     this.role = role;
@@ -9,6 +9,7 @@ function Project(p_number, title, role ,year, techStack, shortPresentation, pres
     this.presentation = presentation; 
     this.mission = mission;  
     this.realisation = realisation; 
+    this.img=img;
     this.github = github; 
 }
 
@@ -22,6 +23,7 @@ const booki = new Project(
   "Le projet Booki est un site Internet qui permet aux utilisateurs de trouver facilement des hébergements et des activités dans leur ville préférée.",
   "Dans ce projet ma mission principale était de transformer les maquettes du site en une interface web fonctionnelle et esthétique.",
   [{fonctionality_name:"1.responsive", fonctionality_desc:"L'un des principaux défis était de rendre le site responsive sur tous les appareils. J'ai utilisé des media queries pour ajuster les styles en fonction de la taille de l'écran, ce qui a permis de garantir une expérience utilisateur optimale."}, {fonctionality_name:"2.versioning", fonctionality_desc:"Tout au long du développement, j'ai versionné le projet en utilisant Git et GitHub, ce qui a facilité la collaboration avec l'équipe et m'a permis de garder une trace de toutes les modifications apportées au code."}],
+  ["/img/booki/booki_screenshot_1.png"],
   "https://github.com/Jokastar/Booki/"
   ); 
 
@@ -38,6 +40,7 @@ const booki = new Project(
    {fonctionality_name:"1.Conception de la page de connexion de l'administrateur", fonctionality_desc:"J'ai développé cette page à partir de zéro en utilisant HTML, CSS et JavaScript pour permettre à l'architecte de se connecter et de gérer son portfolio en toute sécurité."},
    {fonctionality_name:" 2.Implémentation d'une modale pour uploader de nouveaux médias", fonctionality_desc:"J'ai créé cette fonctionnalité à partir de zéro, en me basant sur les besoins spécifiques de l'architecte pour ajouter facilement de nouveaux médias à son site"}
   ],
+  ["/img/portfolio/portfolio_screenshot_1.png", "/img/portfolio/portfolio_screenshot_2.png"],
   "https://github.com/Jokastar/Portfolio-architecte-sophie-bluel-master"
   ); 
 
@@ -55,6 +58,7 @@ const booki = new Project(
     {fonctionality_name:"3.Gestion de la galerie d'images", fonctionality_desc:"J'ai implémenté une galerie d'images avec des fonctionnalités avancées, permettant à l'utilisateur de naviguer de manière circulaire entre les photos et de profiter d'animations dynamiques"},
     {fonctionality_name:"4.Collapses interactives", fonctionality_desc:"J'ai créé des Collapses interactifs qui s'ouvrent ou se ferment en fonction des actions de l'utilisateur, améliorant ainsi l'ergonomie du site."}
      ],
+     ["/img/kasa/kasa_screenshot_1.png", "/img/kasa/kasa_screenshot_2.png"],
      "https://github.com/Jokastar/Kasa"
   ); 
 
@@ -72,6 +76,7 @@ const booki = new Project(
         {fonctionality_name:"2.Sécurité des données ", fonctionality_desc:"J'ai mis en œuvre des méthodes pour assurer la sécurité du site et de la base de données  notamment en garantissant que les adresses électroniques dans la base de données sont uniques, en utilisant la librairie json web token (JWT) pour assurer l’authentification et autorisation sur le site et enfin  en utilisant la librairie Bcrypt pour hasher les mots de passe des utilisateurs"}, 
         {fonctionality_name:"3.Optimisation des images", fonctionality_desc:" j'ai optimisé les images envoyées par les utilisateurs pour réduire leur taille afin de respecter le Green Code"}
     ],
+    ["/img/mvg/mon_vieux_grimoire_screenshot_1.png","/img/mvg/mon_vieux_grimoire_screenshot_2.png"],
     "https://github.com/Jokastar/mon_vieux_grimoire_back_end"
   ); 
 

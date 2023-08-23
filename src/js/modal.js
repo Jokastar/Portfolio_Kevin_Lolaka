@@ -42,6 +42,10 @@ for(let item of grid_items){
             <div class="modal-section" id="modal-realisation">
                 <h2>realisation</h2>
             </div>
+            <div class="modal-section" id="modal-realisation">
+                <h2>illustration</h2>
+                <div class="img-grid"></div>
+            </div>
             <div class="links">
                 <div class="link"><a href="${project.github}" target="_blank">voir code<a/></div>
             </div>
@@ -75,6 +79,18 @@ for(let item of grid_items){
             div.appendChild(p);
 
             techStack.appendChild(div); 
+        }
+
+        for(let src of project.img){
+            const grid = document.querySelector(".img-grid")
+            const div = document.createElement("div"); 
+            div.classList.add("img-grid-container"); 
+            const img = document.createElement("img"); 
+    
+            img.src = src;
+            img.alt="website illustration" 
+            div.appendChild(img);
+            grid.appendChild(div);  
         }
 
         modal.showModal();
