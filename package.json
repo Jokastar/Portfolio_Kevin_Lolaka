@@ -1,5 +1,6 @@
 {
   "name": "portfolio-kevin-lolaka-astro",
+  "homepage": "https://Jokastar.github.io/Portfolio_Kevin_Lolaka",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,11 +8,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "astro": "^2.10.12",
     "gsap": "^3.12.2",
     "swup": "^4.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
