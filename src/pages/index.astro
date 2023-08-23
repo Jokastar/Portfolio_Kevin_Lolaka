@@ -1,36 +1,56 @@
 ---
-import {projects} from "../js/projects_data"; 
+import { projects } from "../js/projects_data";
 import Head from "../components/Head.astro";
 import Footer from "../components/Footer.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
-import "../css/index.css"
-import"../css/home.css"
+import "../css/style.css";
+import "../css/index.css";
 ---
+
 <!DOCTYPE html>
 <html lang="fr">
-<Head>
-</Head>
-<body>
-	<Header />
-	<main>
-        <div class="white-space"></div>
-        <div class="hero-section">
-				<h1>
-					Bonjour, je suis <a href="./about.html">Kevin Lolaka </a> développeur front end basée à Paris.
-					Parcourez mon portfolio pour explorer mes créations et projets uniques
-				</h1>
+  <Head />
+  <body>
+    <Header />
+    <main>
+      <div class="white-space"></div>
+      <div class="hero-section">
+        <h1>
+          Bonjour, je suis <a href="./about.html">Kevin Lolaka</a> développeur front
+          end basée à Paris. Parcourez mon portfolio pour explorer mes créations
+          et projets uniques
+        </h1>
+      </div>
+      <div class="white-space"></div>
+      <div id="portfolio">
+        <h2>portfolio</h2>
+        <div class="portfolio-grid">
+          {
+            projects.map((p) => (
+              <Card
+                p_number={p.p_number}
+                title={p.title}
+                year={p.year}
+                role={p.role}
+                presentation={p.shortPresentation}
+              />
+            ))
+          }
         </div>
-        <div class="white-space"></div>
-        <div id="portfolio">
-            <h2>portfolio</h2>
-            <div class="portfolio-grid">
-                {projects.map(p=> <Card p_number={p.p_number} title={p.title} year={p.year} role={p.role} presentation={p.shortPresentation}/>)}
-            </div>
-        </div>
+      </div>
     </main>
-	<Footer/>
-	<dialog class="modal"></dialog>
-</body>
-<script  src="../js/modal.js"></script>
+    <Footer />
+    <dialog class="modal"></dialog>
+    <script src="../js/modal.js"></script>
+    <script>
+      import { gsap } from "gsap";
+
+      const portfolio = document.querySelector("#portfolio");
+      const main = document.querySelector("main");
+      const modal = document.querySelector(".modal");
+      gsap.from(main, { opacity: 0, duration: 3, ease: "power2.out" });
+      gsap.from(portfolio, { y: 20, duration: 2.9, ease: "power2.out" });
+    </script>
+  </body>
 </html>

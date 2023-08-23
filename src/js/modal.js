@@ -1,6 +1,7 @@
 import { projects, techLogo } from "./projects_data";
 
 
+
 const grid_items = document.querySelectorAll(".portfolio-grid-item");
 const modal = document.querySelector(".modal"); 
 
@@ -18,7 +19,6 @@ for(let item of grid_items){
     item.addEventListener("click", (e)=>{
         const p_number = e.currentTarget.id;
         const project = projects.find(project => project.p_number == p_number); 
-
         const modalInnerHtml = `<div class="cross"> <img src="../../public/xmark-solid.svg"/></div>
         <div class="modal-header" id="modal-header-one">
             <h1 id="modal-title">${project.title}</h1>
@@ -42,8 +42,7 @@ for(let item of grid_items){
                 <h2>realisation</h2>
             </div>
             <div class="links">
-                <div class="link">Voir site</div>
-                <div class="link"> Voir code</div>
+                <div class="link"><a href="${project.github}" target="_blank">voir code<a/></div>
             </div>
         </div>`
         modal.innerHTML = modalInnerHtml;
@@ -77,9 +76,10 @@ for(let item of grid_items){
             techStack.appendChild(div); 
         }
 
-        modal.showModal(); 
+        modal.showModal();
+        
+        const close_button = document.querySelector(".cross img"); 
+        close_button.addEventListener("click", closeModal); 
         
     })
 }
-
-modal.addEventListener("click", closeModal); 

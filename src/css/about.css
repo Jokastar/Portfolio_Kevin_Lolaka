@@ -11,9 +11,13 @@ body, header{
     grid-template-columns: 1fr 1fr;
 }
 
-.about-txt h1 {
+.about-txt h1{
     font-size: 1.5rem;
+    margin: 10vh 0vh;
 }
+
+
+
 
 .white-space-2{
     height: 5vh;
