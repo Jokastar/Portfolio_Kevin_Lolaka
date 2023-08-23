@@ -15,7 +15,7 @@ function Project(p_number, title, role ,year, techStack, shortPresentation, pres
 const booki = new Project(
 "01",
 "Booki", 
-"intégration maquette",
+"integration maquette",
  2023,
  ["html", "css"],
  "Le projet est un site Internet qui permet aux utilisateurs de trouver facilement des hébergements et des activités dans leur ville préférée.",
@@ -28,7 +28,7 @@ const booki = new Project(
   const portfolio = new Project(
     "02",
     "Portfolio Architecte", 
-    "Développement front end",
+    "Developpement front end",
     2023, 
    ["html", "css", "javascript"],
    "Site portfolio d'une architecte d'intérieur. Le projet permet à l'architecte de présenter ses travaux et d'offrir une expérience interactive à ses visiteurs",
@@ -44,7 +44,7 @@ const booki = new Project(
   const kasa = new Project(
     "03",
     "Kasa",
-    "Développement front end", 
+    "Developpement front end", 
     2023,
     ["html", "css", "react"],
     " Le projet est un site de location d'appartements entre particuliers",
@@ -61,7 +61,7 @@ const booki = new Project(
   const mon_vieux_grimoire = new Project(
     "04",
     "Mon Vieux Grimoire",
-    "Développement back end",
+    "Developpement back end",
     2023,
     ["node", "express", "mongo"], 
     "Le projet une plateforme de référencement et de notation de livres, permettant aux utilisateurs d'ajouter de nouveaux livres et de les noter publiquement",
