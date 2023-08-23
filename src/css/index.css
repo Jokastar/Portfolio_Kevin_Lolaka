@@ -109,6 +109,8 @@
 
 .modal{
     width: 50vw;
+    height: 80vh;
+    overflow: scroll;
     background-color: var(--light-grey);
     border: none;
     z-index: 2;
@@ -116,6 +118,11 @@
     outline: none; 
     font-size: var(--p);
     padding: 4%;
+    animation: fade-in 1.5s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal.close{
+    animation: fadeOut 1.5s ease-in-out;
 }
 
 

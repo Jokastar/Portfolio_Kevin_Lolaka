@@ -7,6 +7,7 @@ const modal = document.querySelector(".modal");
 
 function openModal(){
     modal.showModal();
+    window.scroll(0, 0); 
 }
 
 function closeModal(){
